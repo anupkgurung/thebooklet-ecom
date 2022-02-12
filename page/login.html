@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Anup Kumar Gurung">
+    <meta name="description" content="This is ecom for handmade gifts">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://metaui.netlify.app/css/main.css">
+    <link rel="stylesheet" href="../style/header.css">
+    <link rel="stylesheet" href="../style/account.css">
+    <link rel="stylesheet" href="../style/commons.css">
+    <title>Sign In</title>
+</head>
+<body>
+    <div>
+        <div id="header" class="header-bar">
+            <div class="topbar">
+                <div><img class="logo" src="./image/logo.jpg" alt=""></div>
+                <div class="search-bar-head">
+                    <input type="text" class="search input-width" placeholder="Search">
+                </div>
+                <div class="">
+                    <ul class="list-inline">
+                        <li class="list-inline">
+                            <span class="material-icons">account_circle</span>
+                        </li>
+                        <li class="list-inline">
+                            <span class="material-icons">shopping_cart</span>
+                            <span class="badge icon-badge">4</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="authentication">
+                    <button class="btn btn-primary">Login</button>
+                    <button class="btn btn-secondary">Logout</button>
+                </div> 
+            </div>
+            <div class="search-bar-nav">
+                <input type="text" class="search input-width" placeholder="Search">
+            </div>
+            <div id="navigation" class="navigation-bar">
+                <nav class="nav nav-box-shadow">
+                    <ul class="ml-1 navbar-list">
+                        <li><a class="link-style-none" tabindex="1">Books</a></li>
+                        <li><a class="link-style-none" tabindex="1">New Arrivals</a></li>
+                        <li><a class="link-style-none" tabindex="1">Best Seller</a></li>
+                        <li><a class="link-style-none" tabindex="1">Pre-Order</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>    
+ 
+        <div id="main" class="login-container">
+            <form class="login-form flex-col">
+                <div class="text-center">
+                    <h4>Login</h4>
+                </div>
+                <div class="flex-col padding-top-4">   
+                    <label class="margin-btm-2" for="email">Email</label>
+                    <input class="input-width" autocomplete="off" type="email" name="email" id="email" placeholder="username@email.com">
+                </div>
+                <div class="">
+                    <div class="flex-row margin-btm-2 padding-top-4">
+                        <label for="password">Password</label>
+                        <a class="link-style-none forgot-password">Forgot Password</a>
+                    </div>                   
+                    <input class="input-width" autocomplete="off" type="password" name="password" id="password" placeholder="password">
+                </div>
+                <div class="remember-credentials-check flex-row padding-top-2">
+                    <input type="checkbox" id="remember" class="checkbox">
+                    <label for="remember">Remember Me</label>
+                </div>
+                <div class="">
+                    <button class="btn btn-primary w-100 login-btn">Login</button>
+                </div>
+                <div class="sign-up flex-row flex-center margin-top-2">
+                    <label for="">Doesn’t have an account yet?</label>
+                    <a href="./signup.html">Signup</a>
+                </div>
+            </form>
+        </div>
+        <div id="footer">
+            <footer>
+                <div>
+
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

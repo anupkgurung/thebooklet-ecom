@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://metaui.netlify.app/css/main.css">
+    <link rel="stylesheet" href="../style/header.css">
+    <link rel="stylesheet" href="../style/commons.css">
+    <link rel="stylesheet" href="../style/account.css">
+    <title>Sign Up</title>
+</head>
+<body>
+    <div>
+        <div id="header" class="header-bar">
+            <div class="topbar">
+                <div><img class="logo" src="./image/logo.jpg" alt=""></div>
+                <div class="search-bar-head">
+                    <input type="text" class="search input-width" placeholder="Search">
+                </div>
+                <div class="">
+                    <ul class="list-inline">
+                        <li class="list-inline">
+                            <span class="material-icons">account_circle</span>
+                        </li>
+                        <li class="list-inline">
+                            <span class="material-icons">shopping_cart</span>
+                            <span class="badge icon-badge">4</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="authentication">
+                    <button class="btn btn-primary">Login</button>
+                    <button class="btn btn-secondary">Logout</button>
+                </div> 
+            </div>
+            <div class="search-bar-nav">
+                <input type="text" class="search input-width" placeholder="Search">
+            </div>
+            <div id="navigation" class="navigation-bar">
+                <nav class="nav nav-box-shadow">
+                    <ul class="ml-1 navbar-list">
+                        <li><a class="link-style-none" tabindex="1">Books</a></li>
+                        <li><a class="link-style-none" tabindex="1">New Arrivals</a></li>
+                        <li><a class="link-style-none" tabindex="1">Best Seller</a></li>
+                        <li><a class="link-style-none" tabindex="1">Pre-Order</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div id="main" class="signup-container">
+            <form class="signup-form flex-col">
+                <div class="text-center">
+                    <h4>Sign Up</h4>
+                </div>               
+                <div class="flex-col padding-top-4">   
+                    <label class="margin-btm-2" for="email">First Name</label>
+                    <input class="input-width" autocomplete="off" type="text" name="firsName" id="email" placeholder="First Name">
+                </div>
+                <div class="flex-col padding-top-4">   
+                    <label class="margin-btm-2" for="email">Last Name</label>
+                    <input class="input-width" autocomplete="off" type="text" name="lastName" id="email" placeholder="Last Name">
+                </div>
+                <div class="flex-col padding-top-4">   
+                    <label class="margin-btm-2" for="email">Email</label>
+                    <input class="input-width" autocomplete="off" type="email" name="email" id="email" placeholder="username@email.com">
+                </div>
+                <div class="flex-col padding-top-4">               
+                    <label class="margin-btm-2" for="password">Password</label>         
+                    <input class="input-width" autocomplete="off" type="password" name="password" id="password" placeholder="password">
+                </div>
+                <div class="flex-col padding-top-4">               
+                    <label class="margin-btm-2" for="confirmPassword">Confirm Password</label>         
+                    <input class="input-width" autocomplete="off" type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm password">
+                </div>
+                <div class="show-paswrd flex-row padding-top-2">
+                    <input type="checkbox" id="show-paswrd" class="checkbox">
+                    <label for=""show-paswrd">Show Password</label>
+                </div>
+                <div class="">
+                    <button class="btn btn-primary w-100 login-btn">Create Account</button>
+                </div>               
+            </form>
+        </div>
+    </div>
+</body>
+</html>
