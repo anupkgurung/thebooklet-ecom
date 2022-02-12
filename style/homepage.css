@@ -1,0 +1,69 @@
+.authentication{
+    display: flex;
+}
+.content-body {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-gap: 1rem;
+    margin-top: 7rem;
+    padding: 2rem;
+}
+.aside-container {
+    border-right: 1px solid #00000038;;
+    /* box-shadow: 2px 0px 3px 0px black; */
+}
+.cateogory li a {
+    color: var(--secondary-text-color);    
+}
+.content-container {
+    display: grid;    
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    grid-gap: 1.5rem;
+    width: 100%;
+}
+/********** CARDS ************/
+.card-container--verticle {
+    width: 12rem;
+    height: 16rem;
+}
+.card-desc .price,
+.card-desc .title {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--paleblue);
+    line-height: 1rem;
+}
+.card-desc .title {    
+    font-weight: 200;
+}
+.card-desc .author {
+    font-size: 0.6875rem;
+    line-height: 1.125rem;
+}
+.card-footer {
+    justify-content: space-evenly;
+    padding: 0;
+    height: 1.5rem;
+    font-size: 1.125rem;
+    font-weight: 100;
+}
+.card-img-container {
+    height: 12rem;
+}
+.card-desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.footer-btn {
+    color: var(--royalblue-bg);
+    font-weight: 200;
+}
+/********** CARDS ************/
+@media only screen and (max-width:1000px) {
+    .aside-container {
+        display: none;
+    }
+}
