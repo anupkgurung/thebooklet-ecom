@@ -15,8 +15,7 @@
     align-items: center;    
 }
 .icon-badge {
-    margin-left: 2.7rem;
-    margin-top: -2.4rem;
+    margin : -2.4rem 0rem 0rem 2.7rem;
     line-height: .6rem;
     width: 1.4rem;
     padding: 0.4rem 0.5rem 0.3rem 0.45rem;
