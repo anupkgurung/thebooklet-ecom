@@ -1,0 +1,35 @@
+.authentication {
+    display: flex;
+}
+.whishlist-container {
+    margin: 5rem 0rem;
+    padding: 5rem 0rem;
+}
+.card-img-container {
+    height: 7.5rem;
+}
+.card-footer {
+    gap: 0;
+}
+.wishlist-qty{
+    padding: 0.4rem;
+    width: 2rem;
+    line-height: 0;
+}
+.flex-direction-col {
+    justify-content: center;
+    align-items: baseline;
+}
+.whishlist-container main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1rem;
+}
+@media only screen and (max-width:400px) {
+    .whishlist-container main{
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 1rem;
+    }
+}
