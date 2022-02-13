@@ -61,6 +61,29 @@
     color: var(--royalblue-bg);
     font-weight: 200;
 }
+.aside {
+    position: fixed;
+}
+.product-card-container {
+    height: 18.7rem;
+}
+.product-card-footer {
+    flex-direction: column;
+    justify-content: space-between;
+}
+.product-card-footer .btn{
+    border-radius: 0;
+}
+.product-card-footer .btn-secondary-outline {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.cateogory li input,
+.price li input {
+    width: auto;
+    height: auto;
+    margin-right: 0.5rem;
+}
 /********** CARDS ************/
 @media only screen and (max-width:1000px) {
     .aside-container {

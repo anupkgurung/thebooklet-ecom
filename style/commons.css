@@ -83,6 +83,9 @@
 .padding-top-right {
     padding: 2rem 2.5rem;
 }
+.padding-left {
+    padding-left: 2rem;
+}
 .text-color {
     color: var(--royalblue-bg);
 }
