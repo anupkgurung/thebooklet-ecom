@@ -32,6 +32,9 @@
 .flex-gap {
     gap: 1rem;
 }
+.hr-cart {
+    border-bottom: .5px solid black;
+}
 /******** BROWSER CATEGORY ********/
 .cateogory li a:hover {
     color: var(--royalblue-bg);
@@ -58,6 +61,9 @@
 }
 .p-4 {
     padding: 1rem;
+}
+.padding-5 {
+    padding: 1.5rem;
 }
 .w-100 {
     width: 100%;

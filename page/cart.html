@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Anup Kumar Gurung">
+    <meta name="description" content="This is an online book store">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://metaui.netlify.app/css/main.css">
+    <link rel="stylesheet" href="../style/header.css">
+    <link rel="stylesheet" href="../style/commons.css">
+    <link rel="stylesheet" href="../style/wishlist.css">
+    <title>Cart</title>
+</head>
+<body>
+    <div>
+        <div id="header" class="header-bar">
+            <div class="topbar">
+                <div><img class="logo" src="../image/logo.jpg" alt="logo"></div>
+                <div class="search-bar-head">
+                    <input type="text" class="search input-width" placeholder="Search">
+                </div>
+                <div class="">
+                    <ul class="list-inline">
+                        <li class="list-inline">
+                            <span class="material-icons">account_circle</span>
+                        </li>
+                        <li class="list-inline">
+                            <span class="material-icons">shopping_cart</span>
+                            <span class="badge icon-badge">4</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="authentication">
+                    <button class="btn btn-primary">Login</button>
+                    <button class="btn btn-secondary">Logout</button>
+                </div> 
+            </div>
+            <div class="search-bar-nav">
+                <input type="text" class="search input-width" placeholder="Search">
+            </div>
+            <div id="navigation" class="navigation-bar">
+                <nav class="nav nav-box-shadow">
+                    <ul class="ml-1 navbar-list">
+                        <li><a class="link-style-none" tabindex="1">Books</a></li>
+                        <li><a class="link-style-none" tabindex="1">New Arrivals</a></li>
+                        <li><a class="link-style-none" tabindex="1">Best Seller</a></li>
+                        <li><a class="link-style-none" tabindex="1">Pre-Order</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>    
+ 
+        <div id="main" class="cart-container">
+            <main class="cart-items">
+                <div class="item">
+                    <div class='card-container card-container--horizontal mr-l'>
+                        <div class="card-header">
+                            <div class="flex-row flex-start flex-gap">
+                                <div class="card-img-container">
+                                    <img class="responsive img-radius" src="../image/book/ikigai.jpg" alt="ikigai">
+                                </div>
+                                <div class="flex-row flex-direction-col">
+                                    <h5>Ikigai</h5>
+                                    <span class="font-sm mt-3">
+                                        by Linda Dillow
+                                    </span>
+                                    <span>₹699</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer card-footer--height-horizontal">
+                            <button class="btn btn-primary">Remove</button>
+                            <button class="btn btn-secondary-outline">Move to wishlist</button>
+                            <div class="footer-icons">
+                                <span class="material-icons">remove_circle_outline</span>
+                            </div>
+                            <div>
+                                <input class="cart-qty text-center" name="qty" type="text" pattern="[0-9]">
+                            </div>
+                            <div class="footer-icons">
+                                <span class="material-icons">add_circle_outline</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class='card-container card-container--horizontal mr-l'>
+                        <div class="card-header">
+                            <div class="flex-row flex-start flex-gap">
+                                <div class="card-img-container">
+                                    <img class="responsive img-radius" src="../image/book/yogi.jpg" alt="Autobiography of a Yogi">
+                                </div>
+                                <div class="flex-row flex-direction-col">
+                                    <h5>Autobiography of a Yogi</h5>
+                                    <span class="font-sm mt-3">
+                                        by Linda Dillow
+                                    </span>
+                                    <span>₹1099</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer card-footer--height-horizontal">
+                            <button class="btn btn-primary">Remove</button>
+                            <button class="btn btn-secondary-outline">Move to wishlist</button>
+                            <div class="footer-icons">
+                                <span class="material-icons">remove_circle_outline</span>
+                            </div>
+                            <div>
+                                <input class="cart-qty text-center" name="qty" type="text" pattern="[0-9]">
+                            </div>
+                            <div class="footer-icons">
+                                <span class="material-icons">add_circle_outline</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <aside id="cart-total">
+                <div>
+                    <div class='card-container card-container--verticle'>
+                        <div class="padding-5">
+                            <div class="text-center padding-top-4"><h5>Cart Details</h5></div>
+                            <hr class="w-100 hr-cart padding-top-2">
+                            <ul class="padding-top-2 flex-row">
+                                <li>Total Gross :</li>
+                                <li>₹1700</li>                            
+                            </ul>
+                            <ul class="padding-top-2 flex-row">
+                                <li>Shipping :</li>
+                                <li>₹99</li>
+                            </ul>
+                            <ul class="padding-top-2 flex-row">
+                                <li>Discount :</li>
+                                <li>₹0</li>
+                            </ul>
+                            <ul class="padding-top-2 flex-row">
+                                <li>GST :</li>
+                                <li>18%</li>
+                            </ul>
+                            <ul class="padding-top-2 flex-row">
+                                <li>Amount payable :</li>
+                                <li>1899</li>
+                            </ul>
+                            <hr class="w-100 hr-cart padding-top-2">
+                            <div class="card-footer card-verticle-footer">
+                                <button class="btn btn-primary">Proceed to checkout</button>
+                            </div>
+                        </div>                  
+                    </div>
+                </div>
+            </aside>
+        </div>
+        <div id="footer">
+            <footer>
+                <div>
+
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
