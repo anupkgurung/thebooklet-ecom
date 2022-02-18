@@ -43,10 +43,10 @@
 }
 .card-footer {
     justify-content: space-evenly;
-    padding: 0;
-    height: 1.5rem;
+    height: auto;
     font-size: 1.125rem;
     font-weight: 100;
+    padding: 0;
 }
 .card-img-container {
     height: 12rem;
@@ -65,7 +65,9 @@
     position: fixed;
 }
 .product-card-container {
-    height: 18.7rem;
+    display: flex;
+    flex-direction: column;   
+    height: auto;
 }
 .product-card-footer {
     flex-direction: column;
@@ -73,10 +75,12 @@
 }
 .product-card-footer .btn{
     border-radius: 0;
+    
 }
 .product-card-footer .btn-secondary-outline {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    margin: 0.01rem;
 }
 .cateogory li input,
 .price li input {
