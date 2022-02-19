@@ -43,10 +43,10 @@
 }
 .card-footer {
     justify-content: space-evenly;
-    padding: 0;
-    height: 1.5rem;
+    height: auto;
     font-size: 1.125rem;
     font-weight: 100;
+    padding: 0;
 }
 .card-img-container {
     height: 12rem;
@@ -60,6 +60,40 @@
 .footer-btn {
     color: var(--royalblue-bg);
     font-weight: 200;
+}
+.aside {
+    position: fixed;
+}
+.product-card-container {
+    display: flex;
+    flex-direction: column;   
+    height: auto;
+}
+.product-card-footer {
+    flex-direction: column;
+    justify-content: space-between;
+}
+.product-card-footer .btn{
+    border-radius: 0;
+    
+}
+.product-card-footer .btn-secondary-outline {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin: 0.01rem;
+}
+.category li input,
+.price li input {
+    width: auto;
+    height: auto;
+    margin-right: 0.5rem;
+}
+.clear-btn {
+    text-decoration: underline;
+}
+.clear-btn:hover {
+    cursor: pointer;
+    color: var(--paleblue);
 }
 /********** CARDS ************/
 @media only screen and (max-width:1000px) {

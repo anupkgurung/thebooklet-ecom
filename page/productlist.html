@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Anup Kumar Gurung">
+    <meta name="description" content="Details of product">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://metaui.netlify.app/css/main.css">
+    <link rel="stylesheet" href="../style/commons.css">
+    <link rel="stylesheet" href="../style/header.css">
+    <link rel="stylesheet" href="../style/homepage.css">
+    <title>Product List</title>
+</head>
+<body>
+    <div>
+        <div class="header-bar">
+            <div class="topbar">
+                <div><img class="logo" src="../image/logo.jpg" alt=""></div>
+                <div class="search-bar-head">
+                    <input type="text" class="search input-width" placeholder="Search">
+                </div>
+                <div>
+                    <ul>
+                        <li class="list-inline">
+                            <span class="material-icons">account_circle</span>
+                        </li>
+                        <li class="list-inline">
+                            <span class="material-icons">shopping_cart</span>
+                            <span class="badge icon-badge">4</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="authentication">
+                    <button class="btn btn-primary">Login</button>
+                    <button class="btn btn-secondary">Logout</button>
+                </div> 
+            </div>
+            <div class="search-bar-nav">
+                <input type="text" class="search input-width" placeholder="Search">
+            </div>
+            <div id="navigation" class="navigation-bar">
+                <nav class="nav nav-box-shadow">
+                    <ul class="ml-1 navbar-list">
+                        <li><a class="link-style-none" tabindex="1">Books</a></li>
+                        <li><a class="link-style-none" tabindex="1">New Arrivals</a></li>
+                        <li><a class="link-style-none" tabindex="1">Best Seller</a></li>
+                        <li><a class="link-style-none" tabindex="1">Pre-Order</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        
+        <div id="content" class="content-body">
+            <div id="filter" class="filter-container">
+                <aside class="padding-left aside">
+                    <h5 class="text-color">Refine your Search</h5>
+                    <div class="flex-row padding-top-2">
+                        <span>Filters</span>
+                        <span class="clear-btn">Clear All</span>
+                    </div>
+                    <div class="padding-top-4">                        
+                        <h6>Category</h6>             
+                        <ul class="category padding-top-2">
+                            <li class="m-1 list-style"><input type="checkbox">Architecture</li>
+                            <li class="m-1 list-style"><input type="checkbox">Arts & Photography</li>
+                            <li class="m-1 list-style"><input type="checkbox">Body, Mind & Spirit</li>
+                            <li class="m-1 list-style"><input type="checkbox">Technology & Engineering</li>
+                            <li class="m-1 list-style"><input type="checkbox">Travel & holiday</li>
+                            <li class="m-1 list-style"><input type="checkbox">Business & Economics</li>
+                            <li class="m-1 list-style"><input type="checkbox">Biographies & Memoirs</li>
+                        </ul>
+                    </div>
+                    <div class="padding-top-4">
+                        <h6>By Price</h6>
+                        <ul class="price padding-top-2 ">
+                            <li><input type="radio" class="high" name="price" id="high">High to Low</li>
+                            <li><input type="radio" class="low" name="price" id="low">Low to High</li>
+                        </ul>
+                    </div>
+                    <div class="padding-top-4">
+                        <h6>Ratings</h6>
+                        <ul class="rating padding-top-2">
+                            <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                            <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                            <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                            <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                            <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                        </ul>
+                    </div>
+                    <div>
+                    </div>
+                </aside>
+            </div>
+            <div id="content">
+                <main class="content-container">
+                    <div class="item">
+                        <div class='card-container card-container--verticle product-card-container'>
+                            <span class="badge text-badge z-1 m-0">20%</span>                         
+                            <div class="card-header">                                
+                                <div class="card-img-container position-rel">
+                                    <img class="responsive img-radius position-abs" src="../image/book/artphoto.jpg" alt="Art of Photography">
+                                </div>
+                                <div class="card-desc m-2 card-desc--overlay">
+                                    <!-- <span class="price">₹300</span> -->
+                                   <span class="title">Art of Photography</span>
+                                   <!-- <span class="author">Héctor García </span> -->
+                                </div>
+                            </div>
+                            <div class="card-footer card-verticle-footer product-card-footer">
+                                <button class="btn btn-primary w-100">Add to Cart</button>
+                                <button class="btn btn-secondary-outline w-100 ">Add to Wishlist</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class='card-container card-container--verticle product-card-container'>
+                            <span class="badge text-badge z-1 m-0">20%</span>                         
+                            <div class="card-header">                                
+                                <div class="card-img-container position-rel">
+                                    <img class="responsive img-radius position-abs" src="../image/book/digitalphoto.jpg" alt="The Digital Photography">
+                                </div>
+                                <div class="card-desc m-2 card-desc--overlay">
+                                    <!-- <span class="price">₹300</span> -->
+                                   <span class="title">Digital Photography</span>
+                                   <!-- <span class="author">Héctor García </span> -->
+                                </div>
+                            </div>
+                            <div class="card-footer card-verticle-footer product-card-footer">
+                                <button class="btn btn-primary w-100">Go to Cart</button>
+                                <button class="btn btn-secondary-outline w-100 ">Add to Wishlist</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class='card-container card-container--verticle product-card-container'>
+                            <span class="badge text-badge z-1 m-0">20%</span>                         
+                            <div class="card-header">                                
+                                <div class="card-img-container position-rel">
+                                    <img class="responsive img-radius position-abs" src="../image/book/photography.jpg" alt="Street Photography">
+                                </div>
+                                <div class="card-desc m-2 card-desc--overlay">
+                                    <!-- <span class="price">₹300</span> -->
+                                   <span class="title">Street Photography</span>
+                                   <!-- <span class="author">Héctor García </span> -->
+                                </div>
+                            </div>
+                            <div class="card-footer card-verticle-footer product-card-footer">
+                                <button class="btn btn-primary w-100">Add to Cart</button>
+                                <button class="btn btn-secondary-outline w-100 ">Remove from Wishlist</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class='card-container card-container--verticle product-card-container'>
+                            <span class="badge text-badge z-1 m-0">20%</span>                         
+                            <div class="card-header">                                
+                                <div class="card-img-container position-rel">
+                                    <img class="responsive img-radius position-abs" src="../image/book/digitphototwo.jpg" alt="The Digital Photography vol-II">
+                                </div>
+                                <div class="card-desc m-2 card-desc--overlay">
+                                    <!-- <span class="price">₹300</span> -->
+                                   <span class="title">Digital Photography</span>
+                                   <!-- <span class="author">Héctor García </span> -->
+                                </div>
+                            </div>
+                            <div class="card-footer card-verticle-footer product-card-footer">
+                                <button class="btn btn-primary w-100">Add to Cart</button>
+                                <button class="btn btn-secondary-outline w-100 ">Remove from Wishlist</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class='card-container card-container--verticle product-card-container'>
+                            <span class="badge text-badge z-1 m-0">20%</span>                         
+                            <div class="card-header">                                
+                                <div class="card-img-container position-rel">
+                                    <img class="responsive img-radius position-abs" src="../image/book/genesis.jpg" alt="Genesis">
+                                </div>
+                                <div class="card-desc m-2 card-desc--overlay">
+                                    <!-- <span class="price">₹300</span> -->
+                                   <span class="title">Genesis</span>
+                                   <!-- <span class="author">Héctor García </span> -->
+                                </div>
+                            </div>
+                            <div class="card-footer card-verticle-footer product-card-footer">
+                                <button class="btn btn-primary w-100">Go to Cart</button>
+                                <button class="btn btn-secondary-outline w-100 ">Add to Wishlist</button>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
