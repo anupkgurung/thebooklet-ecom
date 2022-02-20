@@ -2,11 +2,17 @@
     display: flex;
 }
 .content-body {
+    display: flex;   
+    gap: 1rem;
+    margin-top: 7rem;
+    padding: 2rem 1rem;
+}
+.content-body-product {
     display: grid;
     grid-template-columns: 25% 75%;
     grid-gap: 1rem;
     margin-top: 7rem;
-    padding: 2rem;
+    padding: 2rem 1rem;
 }
 .aside-container {
     border-right: 1px solid #00000038;;
@@ -16,11 +22,16 @@
     color: var(--secondary-text-color);    
 }
 .content-container {
-    display: grid;    
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: auto;
-    grid-gap: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
     width: 100%;
+}
+.content , .filter-container {
+    padding: 1rem 0rem;
+}
+.padding-top-right {
+    padding: 1rem .5rem;
 }
 /********** CARDS ************/
 .card-container--verticle {
@@ -95,9 +106,28 @@
     cursor: pointer;
     color: var(--paleblue);
 }
+
+.card-footer > div {
+    margin: 0;
+}
 /********** CARDS ************/
 @media only screen and (max-width:1000px) {
-    .aside-container {
+    .aside-container , .filter-container{
         display: none;
+    }
+    .content-body-product {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media  only screen and (max-width:400px){
+    .content {
+        padding : 0rem 4.5rem;
+    }
+}
+@media  only screen and (max-width:500px){
+    .content {
+        padding : 0rem 5rem;
     }
 }

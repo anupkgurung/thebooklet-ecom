@@ -17,23 +17,34 @@
     <div>
         <div class="header-bar">
             <div class="topbar">
-                <div><img class="logo" src="../image/logo.jpg" alt=""></div>
+                <div>
+                    <a class="link-style-none" href="../index.html">
+                        <img class="logo" src="../image/logo.jpg" alt="logo">
+                    </a>
+                </div>
                 <div class="search-bar-head">
                     <input type="text" class="search input-width" placeholder="Search">
                 </div>
                 <div>
                     <ul>
                         <li class="list-inline">
+                            <a class="link-style-none" href="./wishlist.html">
+                                <span class="material-icons">favorite_border</span>
+                            </a>                            
+                        </li>
+                        <li class="list-inline">
                             <span class="material-icons">account_circle</span>
                         </li>
                         <li class="list-inline">
-                            <span class="material-icons">shopping_cart</span>
-                            <span class="badge icon-badge">4</span>
+                            <a class="link-style-none" href="./cart.html">
+                                <span class="material-icons">shopping_cart</span>
+                                <span class="badge icon-badge">4</span>
+                            </a>                            
                         </li>
                     </ul>
                 </div>
                 <div class="authentication">
-                    <button class="btn btn-primary">Login</button>
+                    <button class="btn btn-primary hide-default">Login</button>
                     <button class="btn btn-secondary">Logout</button>
                 </div> 
             </div>
@@ -43,16 +54,16 @@
             <div id="navigation" class="navigation-bar">
                 <nav class="nav nav-box-shadow">
                     <ul class="ml-1 navbar-list">
-                        <li><a class="link-style-none" tabindex="1">Books</a></li>
-                        <li><a class="link-style-none" tabindex="1">New Arrivals</a></li>
-                        <li><a class="link-style-none" tabindex="1">Best Seller</a></li>
-                        <li><a class="link-style-none" tabindex="1">Pre-Order</a></li>
+                        <li><a class="link-style-none" tabindex="1" href="./productlist.html">Books</a></li>
+                        <li><a class="link-style-none" tabindex="1" href="./productlist.html">New Arrivals</a></li>
+                        <li><a class="link-style-none" tabindex="1" href="./productlist.html">Best Seller</a></li>
+                        <li><a class="link-style-none" tabindex="1" href="./productlist.html">Pre-Order</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
         
-        <div id="content" class="content-body">
+        <div id="content" class="content-body-product">
             <div id="filter" class="filter-container">
                 <aside class="padding-left aside">
                     <h5 class="text-color">Refine your Search</h5>
@@ -93,7 +104,7 @@
                     </div>
                 </aside>
             </div>
-            <div id="content">
+            <div id="main" class="content">
                 <main class="content-container">
                     <div class="item">
                         <div class='card-container card-container--verticle product-card-container'>
