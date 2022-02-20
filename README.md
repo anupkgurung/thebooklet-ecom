@@ -1,4 +1,4 @@
-[The Booket](https://thebooklet.netlify.app/)
+[The Booklet](https://thebooklet.netlify.app/)
 
 <hr/>
 
