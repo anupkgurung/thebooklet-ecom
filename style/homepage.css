@@ -10,7 +10,7 @@
 .content-body-product {
     display: grid;
     grid-template-columns: 25% 75%;
-    grid-gap: 1rem;
+    grid-gap: 2rem;
     margin-top: 7rem;
     padding: 2rem 1rem;
 }
